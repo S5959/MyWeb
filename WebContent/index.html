@@ -9,7 +9,7 @@
 	header {
 		width: 100%;
 		height: 571px;
-		background-color: #007a8c;
+		/*background-color: #007a8c;*/
 	}
 	#header_top {
 		width: 100%;
@@ -19,36 +19,39 @@
 		font-size: 14px;
 		font-family: sans-serif;
 		position: fixed;
-		background-color: rgba(0,0,0,0.2);
-		
+		/*background-color: rgba(0,0,0,0.2);*/
+		background-color: yellow;
 	}
 	.header_util {
 		width: 1080px;
 		height: 40px;
 		margin: 0 auto;
-		position: relative;
-		
+		position: relative;	
+		background-color: yellow;
 	}
 	.inside_heading {
 		/*width: 260px;
 		height: 100%;*/
 		background-color: green;
 		float: left;
-		position: absolute;
+		/*position: absolute;
 		top: 0px;
-		left: 0px;
-	}
-	
-	.inside_heading ul {
+		left: 0px;*/
+	}	
+	.inside_heading > ul {
 		border-right: 1px solid black;
 		float: left;
 	}
 	.inside_heading li {
+		height: 21px;
 		float: left;
 		padding: 10px 11px 9px;
+		/*margin: 10px 11px 9px;*/
+		box-sizing: border-box;	
 	}	
 	.inside_heading li:first-child {
 		padding-left: 0px;
+		/*margin-left: 0px;*/
 	}
 	.inside_heading li:not(:last-child) {
 		border-right: 1px solid white;
@@ -80,27 +83,50 @@
 	#header_body {
 		position: fixed;
 		width: 100%;
-		height: auto;
+		height: 121px;
 		top: 40px;
 		padding-top: 33px;
-		background-color: #564860;
+		box-sizing: border-box;
+		/*background-color: #564860;*/
+		background-color: red;
 	}
 	.body_inner {
 		width: 1080px;
 		height: 88px;
 		padding: 0 10px;
 		box-sizing: border-box;
-		background-color: black;
+		background-color: green;
 		margin: 0 auto;
 	}
-	
-	.head_logo > img {
+	.head_logo {
 		width: 141px;
 		height: 25px;
 		float: left;
 	}
-	
-	
+	.head_logo img {
+		width: 100%;
+	}
+	.head_title {
+		float: left;
+	}
+	.head_title li {
+		float: left;
+	}
+	.head_menu {
+		margin-top: 0px;
+		float: right;
+		
+	}
+	.head_menu > img {
+		width: 35px;
+		height: 22px;
+		color: white;
+	}
+	#main_con {
+		width: 100%;
+		height: 571px;
+		background-color: blue;
+	}
 	
 	
 	
@@ -109,15 +135,50 @@
 	section {
 		width: 100%;
 		height: 960px;
-		background-color: blue;
+	}
+	.main_quick {
+		width: 100%;
+		height: 140px;
+		background-color: yellow;
+	}
+	.main_content {
+		width: 100%;
+		height: 687px;
+		background-color: red;
+	}
+	.main_notice_wrap {
+		width: 100%;
+		height: 133px;
 	}
 	
+
 	
 	/* Footer */
 	footer {
 		width: 100%;
 		height: 269px;
+	}
+	.tel_link_box {
+		width: 100%;
+		height: 50px;
 		background-color: yellow;
+	}
+	.customer_wrap {
+		width: 100%;
+		height: 112px;
+		background-color: red;
+	}
+	.footer_expand_toggle {
+		width: 100%;
+		height: 40px;
+		background-color: blue;
+	}
+	
+	.ly_inner {
+		width: 1080px;
+		height: 100%;
+		margin: 0 auto;
+		background-color: gray;
 	}
 	
 </style>
@@ -134,7 +195,6 @@
 		<div id="header_top">
 			<div class="header_util">
 				<div class="inside_heading">
-					<!-- 
 					<ul>
 						<li><a href="#">개인</a></li>
 						<li><a href="#">법인</a></li>
@@ -147,7 +207,6 @@
 						<option>올댓쇼핑</option>
 						<option>BIGDATA</option>
 					</select>
-					 -->
 				</div>
 				<div class="inside_body">
 					<ul>
@@ -162,13 +221,23 @@
 		<div id="header_body">
 			<div class="body_inner">
 				<div class="head_logo">
-					<img src="./images/common/shinhancard_logo_main.png" alt="logo">
+					<a href="#"><img src="./images/common/shinhancard_logo_main.png" alt="logo"></a>
 				</div>
 				<div class="head_title">
-					
+					<ul>
+						<li>마이</li>
+						<li>혜택</li>
+						<li>금융</li>
+						<li>카드</li>
+						<li>편의</li>
+						<li>디지털</li>
+						<li>라이프</li>
+						<li>Tops Club</li>
+						<li>고객센터</li>
+					</ul>
 				</div>
 				<div class="head_menu">
-				
+					<img src="./images/common/menu.png" alt="">
 				</div>
 			</div>
 		</div>
@@ -177,12 +246,29 @@
 		</div>
 	</header>
 	<!-- Section -->
-	<section>
-	
+	<section id="container">
+		<div class="main_quick">
+			<div class="ly_inner"></div>
+		</div>
+		<div class="main_content">
+			<div class="ly_inner"></div>
+		</div>
+		<div class="main_notice_wrap">
+			<div class="ly_inner"></div>
+		</div>
 	</section>
 	<!-- Footer -->
 	<footer>
-	
+		<div class="tel_link_box">
+			<div class="ly_inner"></div>
+		</div>
+		<div class="customer_link">
+		<div class="ly_inner"></div>
+		
+		</div>
+		<div class="footer_expand_toggle">
+			<div class="ly_inner"></div>
+		</div>
 	</footer>
 </body>
 </html>
