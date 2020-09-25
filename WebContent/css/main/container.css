@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/* Main Container */
+section {
+	width: 100%;
+	height: 960px;
+}
+
+.main_quick {
+	width: 100%;
+	height: 140px;
+	background-color: yellow;
+}
+
+.main_content {
+	width: 100%;
+	height: 687px;
+	background-color: red;
+}
+
+.main_notice_wrap {
+	width: 100%;
+	height: 133px;
+}
