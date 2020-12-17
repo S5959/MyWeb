@@ -37,30 +37,57 @@ header {
 		left: 0px;*/
 }
 
-.inside_heading>ul {
+.inside_heading > ul {
 	border-right: 1px solid black;
 	float: left;
 }
 
-.inside_heading li {
+.inside_heading .dep1 {
+	height:100%;
+}
+
+.inside_heading .dep1 li {
+	position:relative;
 	height: 21px;
 	float: left;
 	padding: 10px 11px 9px;
-	/*margin: 10px 11px 9px;*/
 	box-sizing: border-box;
 }
 
-.inside_heading li:first-child {
+.inside_heading .dep1:ntn-of-type(1) li:first-child {
 	padding-left: 0px;
-	/*margin-left: 0px;*/
 }
 
-.inside_heading li:not(:last-child) {
+.inside_heading .dep1:ntn-of-type(1) li:last-child {
+	padding-left: 0px;
+}
+
+/* .inside_heading li:not(:last-child) {
 	border-right: 1px solid white;
+	margin-top:14px;
+	background-color: rgba(255,255,255,0.1);
+}
+ */
+.inside_heading .dep1 li:not(:last-child):after {
+	position:absolute;
+	top:14px;
+	right:0;
+	width:1px;
+	height:12px;
+	background-color: rgba(255,255,255,0.1);
 }
 
 .inside_heading li:last-child {
 	margin-right: 11px;
+}
+
+.inside_heading li:not(:last-child):after {
+	position:absolute;
+	top:14px;
+	right:0;
+	width:1px;
+	height:12px;
+	background-color: rgba(255,255,255,0.1);
 }
 
 .inside_heading>select {
